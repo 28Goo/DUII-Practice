@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 5px 10px 5px 10px;
+}
+
+.drop-down {
+    font-size: 36px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.drop-down:hover {
+    color: rgb(0, 0, 255);
+}
+
+.list {
+    display: none;
+    animation: show-list 0.5s;
+}
+
+.visible {
+    display: block;
+}
+
+.choices {
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 120px;
+    border: .5px solid black;
+    cursor: pointer;
+}
+.choices:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+@keyframes show-list {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
